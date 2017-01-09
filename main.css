@@ -1,0 +1,47 @@
+.navbar {
+	background-color: beige;
+	margin-bottom: 0px;
+}
+
+.active 	{
+	background-color: beige;
+}
+
+.logo {
+
+	background-image: url("/images/Brand1.png");
+    text-shadow: 3px 3px;
+	
+	background-repeat: repeat-x
+
+}
+
+
+
+/*Carousel specific*/
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+
+.onebyone-carosel .active.left { left: -33.33%; }
+
+.onebyone-carosel .active.right { left: 33.33%; }
+
+.onebyone-carosel .next { left: 33.33%; }
+
+.onebyone-carosel .prev { left: -33.33%; }
+
+.carousel-example-generic { padding-bottom: 20px}
+/*Carousel specific*/
+
+/*.item	{
+	height: 250px;
+	width:	250px;
+}*/
+
+
+
+
+
+
+
+
+
