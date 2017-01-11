@@ -9,10 +9,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
   </head>
-  
-  <body>
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
+
+  <body class="background">
+    <div class="header">
+      <div>
+      <nav class="navbar navbar-inverse inlinenav">
+
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,20 +23,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      
-        
+
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li class="active"><a href="#">Link</a></li>
+
+        <li><a href="#">Locations</a></li>
+
+
+        <!-- This will bring in the map
+        <div id= "map"></div>
+         -->
+
+
+
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -53,35 +60,27 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</li>
         </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+</div>
 <!-- ***************************************************
-Carousel import to show main Wedding dance pictures on Landing page. 
+Carousel import to show main Wedding dance pictures on Landing page.
 Explorer 8 & 9 will not slide pictures
 The ".active" class needs to be added to one of the slides. Otherwise, the carousel will not be visible.-->
 
-<!-- This is where the logo is!   -->
-  
-  <img class ="logo" src="/images/Brand1.png"/>
- <div class="logo"></div>
-  
-<!-- This is where the logo is!   -->
-
-
-
 <!-- This where the carousel begins -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3500">
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3500">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
- 
+
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
@@ -103,7 +102,7 @@ The ".active" class needs to be added to one of the slides. Otherwise, the carou
       </div>
     </div>
   </div>
- 
+
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -111,7 +110,7 @@ The ".active" class needs to be added to one of the slides. Otherwise, the carou
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-</div> 
+</div>
 
 <!-- Carousel -->
 
@@ -121,8 +120,3 @@ The ".active" class needs to be added to one of the slides. Otherwise, the carou
 
  </body>
 </html>
-
-
-
-
-

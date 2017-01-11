@@ -1,24 +1,38 @@
-.navbar {
-	background-color: beige;
-	margin-bottom: 0px;
+
+	.background  {
+		background-image: url("/images/RosePlogo.png");
+		background-color: #FFCC28;
+	}
+
+	.navbar	{
+		/*background-image: url("/images/RosePlogo.png");
+		background-color: #C6C6C9;*/
+		border: 15px;
+		padding: 0px;
+		margin: 25px
+
+	}
+
+	.header	{
+		position: relative;
+		vertical-align: top;
 }
-
-.active 	{
-	background-color: beige;
+	.btn	{
+		background-color: #C6C6C9;
 }
+	.form-control	{
+		background-color: #C6C6C9;
+	}
+	.carousel	{
+		background-color: #1F2024;
+		padding: 10px;
+		text-shadow: 5px 5px;
+		width: 65%;
+		height: 90%;
+		margin: auto;
+	}
 
-.logo {
 
-	background-image: url("/images/Brand1.png");
-    text-shadow: 3px 3px;
-	
-	background-repeat: repeat-x
-
-}
-
-
-
-/*Carousel specific*/
 .carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
 
 .onebyone-carosel .active.left { left: -33.33%; }
@@ -30,12 +44,7 @@
 .onebyone-carosel .prev { left: -33.33%; }
 
 .carousel-example-generic { padding-bottom: 20px}
-/*Carousel specific*/
 
-/*.item	{
-	height: 250px;
-	width:	250px;
-}*/
 
 
 
