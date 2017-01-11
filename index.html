@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app= "rose">
 <head>
   <title>Rose Presents!</title>
   <meta charset="utf-8">
@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="controller.js"></script>
   </head>
 
-  <body class="background">
+  <body class="background" ng-controller= "roseController as rCtl">
+
     <div class="header">
-      <div>
+      <img src="/images/Brand1.png">
+        <div class="navspace">
       <nav class="navbar navbar-inverse inlinenav">
 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,13 +35,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-        <li><a href="#">Locations</a></li>
-
-
-        <!-- This will bring in the map
-        <div id= "map"></div>
-         -->
-
+        <li ng-click="rCtl.map()"><a href="#">Locations</a></li>
+          <div id= "map" ng-show="rCtl.showmap">{{rCtl.greeting}}</div>
 
 
         <li class="dropdown">
@@ -60,13 +59,24 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span>Contact Us</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</li>
         </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+  </a>
+  </li>
+  </ul>
+  
 </nav>
 </div>
+<!-- *************************************************** -->
+
+
+
+
+
+
 <!-- ***************************************************
 Carousel import to show main Wedding dance pictures on Landing page.
 Explorer 8 & 9 will not slide pictures

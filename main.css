@@ -1,22 +1,38 @@
 
-	.background  {
+	/*.header	{
 		background-image: url("/images/RosePlogo.png");
-		background-color: #FFCC28;
+		display: inline-block;
+    	width: 150px;
+    	height: 75px;
+    	
+}*/
+
+	#img {
+		height: 100px;
+}
+
+	.background  {
+		background-image: url("/images/bubbles.jpg");
+}
+
+	.navspace	{
+		float: right;
 	}
 
-	.navbar	{
-		/*background-image: url("/images/RosePlogo.png");
-		background-color: #C6C6C9;*/
+	/*.navbar	{
 		border: 15px;
 		padding: 0px;
-		margin: 25px
+		margin: 30px;
+		width: 70%;*/
+
+
 
 	}
 
-	.header	{
+	/*.header	{
 		position: relative;
 		vertical-align: top;
-}
+}*/
 	.btn	{
 		background-color: #C6C6C9;
 }
@@ -25,11 +41,10 @@
 	}
 	.carousel	{
 		background-color: #1F2024;
-		padding: 10px;
-		text-shadow: 5px 5px;
+		padding: 5px;
 		width: 65%;
-		height: 90%;
 		margin: auto;
+		 
 	}
 
 
