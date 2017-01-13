@@ -1,86 +1,89 @@
-<!DOCTYPE html>
-<html ng-app= "rose">
-<head>
-  <title>Rose Presents!</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-  <script src="controller.js"></script>
+<!DOCTYPE>
+<html lang="en" ng-app='rose'>
+  <head>
+    <title>Google map</title>
+    <!-- <meta name ="viewport" content="initial-scale=1.0"> -->
+    <meta charset="utf-8">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script> -->
+
+
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+   
+    <script src="/main.js"></script>
   </head>
+    <body class='background' ng-controller="roseController as rCtl">
 
-  <body class="background" ng-controller= "roseController as rCtl">
+      <div id="myModal" class="modal">
 
-    <div class="header">
-      <img src="/images/Brand1.png">
-        <div class="navspace">
-      <nav class="navbar navbar-inverse inlinenav">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-
-        <li ng-click="rCtl.map()"><a href="#">Locations</a></li>
-          <div id= "map" ng-show="rCtl.showmap">{{rCtl.greeting}}</div>
-
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+      <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <div id= "map" ng-show="rCtl.showmap"></div>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-       <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span>Contact Us</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</li>
+
+      </div>
+
+          <div class="header">
+            <img class="img" src="/images/Brand1.png">
+              <div class="navspace">
+            <nav class="navbar navbar-inverse inlinenav">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+              <li ng-click="rCtl.gmap()"><a href="#">Locations</a></li>
+
+
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+             <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Contact Us</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </a>
+        </li>
         </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-  </a>
-  </li>
-  </ul>
-  
-</nav>
-</div>
-<!-- *************************************************** -->
 
-
-
-
-
-
-<!-- ***************************************************
-Carousel import to show main Wedding dance pictures on Landing page.
-Explorer 8 & 9 will not slide pictures
-The ".active" class needs to be added to one of the slides. Otherwise, the carousel will not be visible.-->
+      </nav>
+      </div>
 
 <!-- This where the carousel begins -->
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3500">
@@ -113,20 +116,9 @@ The ".active" class needs to be added to one of the slides. Otherwise, the carou
     </div>
   </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
 
-<!-- Carousel -->
-
-<!-- ********************  End of Carousel ****************************************
- -->
-
-
- </body>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOMvnAt6f1iphbldpTmXSPl28jK1avucc&v=3&callback=initMap">
+        </script>
+         <script src="controller.js"></script>
+    </body>
 </html>

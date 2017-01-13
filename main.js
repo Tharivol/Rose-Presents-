@@ -1,12 +1,13 @@
 
-	var map;
+	
+
+var map;
 
 	var markers =[];
 
 	function initMap()	{
-		map = new google.maps.Map(document.getElementById('map'), {center: {lat: 40.7413, lng: -73.9980}, zoom: 13
-	});
-
+		map = new google.maps.Map(document.getElementById('map'), {center: {lat: 40.7413, lng: -73.9980}, zoom: 13});
+		
 
 	var locations = [
 	{title: 'park Ave Penthouse', location: {lat: 40.7713024, lng: -73.9632393}},
@@ -53,5 +54,3 @@
 				});
 			}
 		}
-
-				async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOMvnAt6f1iphbldpTmXSPl28jK1avucc&v=3&callback=initMap">
